@@ -1,0 +1,1 @@
+timeTabIcons[i].click();
