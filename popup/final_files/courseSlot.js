@@ -1,6 +1,10 @@
 async function getSlot(courseId) {
     let slotInfo = {};
 
+    await fetch("https://aims.iith.ac.in/aims/base/changeUserRole/7", {
+        "method": "POST"
+    });
+
     await fetch(`https://aims.iith.ac.in/aims/deptCourse/viewStudRCrs/${courseId}`, {
         "method": "GET"
         //cookie not required. it works even without it somehow
